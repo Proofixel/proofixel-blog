@@ -4,7 +4,7 @@ site_author: Proofixel Team
 copyright: Copyright &copy; 2026 PROOFIXEL
 
 repo_name: proofixel-blog
-repo_url: https://github.com/gotikozzy/proofixel-blog
+repo_url: https://github.com/proofixel/proofixel-blog
 
 theme:
   name: material
