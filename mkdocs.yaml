@@ -1,0 +1,49 @@
+site_name: Proofixel Blog
+site_url: https://blog.proofixel.cloud
+site_author: Proofixel Team
+copyright: Copyright &copy; 2026 PROOFIXEL
+
+repo_name: proofixel-blog
+repo_url: https://github.com/gotikozzy/proofixel-blog
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  palette: 
+    # Mantenha o MESMO tema da Docs para consistência
+    - scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-7
+        name: Mudar para modo claro
+    - scheme: slate
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo escuro
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    # IMPORTANTE: Recursos específicos de Blog
+    - navigation.indexes 
+    - header.autohide
+
+# --- A MÁGICA DO BLOG ---
+plugins:
+  - search
+  - blog:
+      post_dir: posts         # Pasta onde ficam os textos
+      post_date_format: full  # Formato da data
+      authors_file: "{blog}/.authors.yml" # Arquivo com info dos autores (opcional)
+
+nav:
+  - Blog: index.md
+  - Categorias:
+      - Tecnologia: tags/tecnologia.md  # O plugin gera isso sozinho se quiser
