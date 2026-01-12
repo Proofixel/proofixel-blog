@@ -2,11 +2,11 @@
    1. VISUAL GERAL E CORES PROOFIXEL
    ========================================================================== */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #0a0a0c !important; 
+  --md-default-bg-color: #040a28 !important; 
   --md-default-fg-color: #E3E3E8 !important; 
-  --md-primary-fg-color: #6C32F5; 
+  --md-primary-fg-color: #020617; 
   --md-accent-fg-color:  #00E5FF; 
-  --md-header-bg-color:  #6C32F5; 
+  --md-header-bg-color:  #8E5FF7; 
 }
 
 /* ==========================================================================
@@ -48,16 +48,16 @@
 .md-typeset blockquote { border-left: 2px solid #333; color: #a0a0b0; padding-left: 1rem; }
 
 /* ==========================================================================
-   4. RODAPÉ (O TRUQUE DE MÁGICA)
+   4. RODAPÉ 
    ========================================================================== */
 
 /* Pinta o fundo de Roxo Proofixel */
 footer, .md-footer, .md-footer__inner, .md-footer-meta {
-    background-color: #6C32F5 !important;
+    background-color: #020617!important;
     color: white !important;
 }
 
-/* O TRUQUE: Define tamanho ZERO para tudo na linha de copyright */
+/* Define tamanho ZERO para tudo na linha de copyright */
 /* Isso faz o texto "Made with..." sumir porque ele fica com 0px de altura */
 .md-copyright {
     font-size: 0 !important; 
