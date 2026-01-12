@@ -1,5 +1,5 @@
 site_name: Proofixel
-site_url: https://blog.proofixel.com
+site_url: https://proofixel.com
 site_author: Proofixel Team
 copyright: |
   <span class="meu-copyright">Copyright &copy; 2026 <a href="https://proofixel.com" target="_blank" rel="noopener">PROOFIXEL</a></span>
@@ -79,6 +79,7 @@ nav:
   - Labs:          # O agrupador no menu esquerdo
     - 'A Ciência dos Pixels': blog/a-ciencia-dos-pixels.md
     - 'Popper no Sofware, um Erro que da Certo': blog/Popper_no_Software_e_na_A.I.md
+    - 'MoE os Pequenos Notáveis da A.I Moderna': blog/MoE_os_pequenos_notaveis_da_A.I.md
 
      
 

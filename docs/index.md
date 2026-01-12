@@ -24,6 +24,13 @@ Repositório Pesquisa e Engenharia de Desenvolvimento por trás da plataforma Pr
 
 ---
 
+### [MoE Arquitetura de mini Especialistas de A.I](blog/MoE_os_pequenos_notaveis_da_A.I.md)
+<small style="opacity: 0.6; font-family: monospace;">02 JAN 2026</small>
+
+> Longe de ser apenas uma técnica de compressão, o MoE representa um novo paradigma de modularidade dinâmica de A.I, economiza tokens, cabe no servidor, no celular e até no Raspberry.
+
+---
+
 <br>
 <p align="center" style="opacity: 0.5; font-size: 0.8em;">
 Proofixel © 2026. <a href="https://proofixel.com">Ir para a Plataforma</a>.
