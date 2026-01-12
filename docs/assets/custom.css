@@ -1,0 +1,17 @@
+/* docs/assets/custom.css */
+
+/* Força o container do MathJax a usar a cor de texto do tema atual */
+mjx-container {
+  color: var(--md-text-color) !important;
+}
+
+/* Garante que o preenchimento (fill) dos vetores SVG também mude */
+mjx-container svg {
+  fill: var(--md-text-color) !important;
+  stroke: var(--md-text-color) !important;
+}
+
+/* Previne que números de linhas ou outros elementos fiquem invisíveis */
+.MathJax {
+  color: var(--md-text-color) !important;
+}

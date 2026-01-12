@@ -1,3 +1,2 @@
-# Blog Técnico Proofixel
+# Blog
 
-Explorando a fronteira da Perícia Forense Digital e Inteligência Artificial.

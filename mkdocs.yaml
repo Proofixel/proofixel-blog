@@ -1,5 +1,5 @@
 site_name: Proofixel Blog
-site_url: https://blog.proofixel.cloud
+site_url: https://blog.proofixel.com
 site_author: Proofixel Team
 copyright: Copyright &copy; 2026 PROOFIXEL
 
@@ -42,8 +42,33 @@ plugins:
       post_dir: posts         # Pasta onde ficam os textos
       post_date_format: full  # Formato da data
       authors_file: "{blog}/.authors.yml" # Arquivo com info dos autores (opcional)
+      
+extra_css:
+  - assets/custom.css      
 
-nav:
-  - Blog: index.md
-  - Categorias:
-      - Tecnologia: tags/tecnologia.md  # O plugin gera isso sozinho se quiser
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - def_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - md_in_html              
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - assets/mathjax.js
+  - assets/mermaid-init.js
+
