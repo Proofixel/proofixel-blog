@@ -17,7 +17,7 @@ Repositório Pesquisa e Engenharia de Desenvolvimento por trás da plataforma Pr
 
 ---
 
-### [Popper no Software oErro que da Certo](blog/Popper_no_Software_e_na_A.I.md)
+### [Popper no Software o Erro que da Certo](blog/Popper_no_Software_e_na_A.I.md)
 <small style="opacity: 0.6; font-family: monospace;">02 JAN 2026</small>
 
 > Por que a falseabilidade é a única forma de garantir a robustez de um sistema de IA? Aplicando o racionalismo crítico de Karl Popper na arquitetura de software e na detecção de deepfakes.
