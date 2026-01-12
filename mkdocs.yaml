@@ -10,20 +10,20 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
   palette: 
-    # Modo Claro (Opcional, caso o usuário troque)
+    # 1. MODO ESCURO (Agora é o Primeiro = Padrão)
+    - scheme: slate
+      primary: custom # Mantém sua configuração customizada do CSS
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Mudar para modo claro
+
+    # 2. MODO CLARO (Secundário/Opcional)
     - scheme: default
       primary: white
       accent: deep purple
       toggle:
         icon: material/brightness-7
-        name: Mudar para modo claro
-    
-    # Modo Escuro (O PROOFIXEL MODE)
-    - scheme: slate
-      primary: custom # Isso avisa o MkDocs: "Deixa que eu resolvo no CSS"
-      accent: deep purple
-      toggle:
-        icon: material/brightness-4
         name: Mudar para modo escuro
   features:
     - navigation.instant
@@ -46,6 +46,7 @@ plugins:
 extra_css:
   - assets/custom.css      
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 markdown_extensions:
   - admonition
@@ -69,9 +70,9 @@ markdown_extensions:
   - md_in_html              
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  - assets/mathjax.js
-  - assets/mermaid-init.js
+  - assets/katex.js 
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 nav:
   - Research Log: index.md  # A Home que acabamos de criar

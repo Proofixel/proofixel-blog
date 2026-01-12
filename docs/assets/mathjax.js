@@ -1,3 +1,6 @@
+/* docs/assets/mathjax.js */
+
+// 1. Definição da Configuração (Antes de carregar a lib)
 window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],
@@ -11,26 +14,19 @@ window.MathJax = {
   }
 };
 
-/* 1. Inicializa no carregamento da página (Instant Loading) */
+// 2. Carregamento da Biblioteca (Injeção Manual)
+(function () {
+  var script = document.createElement("script");
+  script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+  script.async = true;
+  document.head.appendChild(script);
+})();
+
+// 3. Integração com MkDocs Material (Navegação Instantânea)
 document$.subscribe(() => { 
-  MathJax.typesetPromise()
-})
-
-/* 2. Escuta a troca de tema e força a repintura das fórmulas */
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    if (mutation.type === "attributes") {
-      // Pequeno delay para garantir que o CSS do tema já trocou
-      setTimeout(() => {
-        MathJax.typesetPromise()
-      }, 100);
-    }
-  });
-});
-
-/* Observa mudanças no atributo 'data-md-color-scheme' no corpo do site */
-var element = document.querySelector("body");
-observer.observe(element, {
-  attributes: true,
-  attributeFilter: ["data-md-color-scheme"]
+  // Se o MathJax já estiver carregado (navegação subsequente), força o render
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetClear();
+    MathJax.typesetPromise();
+  }
 });
