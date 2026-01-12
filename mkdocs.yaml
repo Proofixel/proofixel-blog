@@ -1,10 +1,8 @@
 site_name: Proofixel
 site_url: https://blog.proofixel.com
 site_author: Proofixel Team
-copyright: Copyright &copy; 2026 PROOFIXEL
-
-repo_name: proofixel-blog
-repo_url: https://github.com/proofixel/proofixel-blog
+copyright: |
+  <span class="meu-copyright">Copyright &copy; 2026 <a href="https://proofixel.com" target="_blank" rel="noopener">PROOFIXEL</a></span>
 
 theme:
   name: material
@@ -12,15 +10,18 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
   palette: 
+    # Modo Claro (Opcional, caso o usuário troque)
     - scheme: default
-      primary: black
-      accent: black
+      primary: white
+      accent: deep purple
       toggle:
         icon: material/brightness-7
         name: Mudar para modo claro
+    
+    # Modo Escuro (O PROOFIXEL MODE)
     - scheme: slate
-      primary: black
-      accent: black
+      primary: custom # Isso avisa o MkDocs: "Deixa que eu resolvo no CSS"
+      accent: deep purple
       toggle:
         icon: material/brightness-4
         name: Mudar para modo escuro
@@ -33,6 +34,8 @@ theme:
     # IMPORTANTE: Recursos específicos de Blog
     - navigation.indexes 
     - header.autohide
+    - navigation.tabs
+    - navigation.sections
 plugins:
   - search
   - blog:
@@ -42,6 +45,7 @@ plugins:
 
 extra_css:
   - assets/custom.css      
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition
@@ -68,4 +72,12 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/mathjax.js
   - assets/mermaid-init.js
+
+nav:
+  - Research Log: index.md  # A Home que acabamos de criar
+  - Labs:          # O agrupador no menu esquerdo
+    - 'A Ciência dos Pixels': blog/a-ciencia-dos-pixels.md
+    - 'Popper no Sofware, um Erro que da Certo': blog/Popper_no_Software_e_na_A.I.md
+
+     
 
