@@ -1,4 +1,4 @@
-site_name: Proofixel Blog
+site_name: Proofixel
 site_url: https://blog.proofixel.com
 site_author: Proofixel Team
 copyright: Copyright &copy; 2026 PROOFIXEL
@@ -12,7 +12,6 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
   palette: 
-    # Mantenha o MESMO tema da Docs para consistência
     - scheme: default
       primary: black
       accent: black
@@ -34,15 +33,13 @@ theme:
     # IMPORTANTE: Recursos específicos de Blog
     - navigation.indexes 
     - header.autohide
-
-# --- A MÁGICA DO BLOG ---
 plugins:
   - search
   - blog:
       post_dir: posts         # Pasta onde ficam os textos
       post_date_format: full  # Formato da data
-      authors_file: "{blog}/.authors.yml" # Arquivo com info dos autores (opcional)
-      
+      authors_file: "{blog}/.authors.yml" # Arquivo com info dos autores
+
 extra_css:
   - assets/custom.css      
 
